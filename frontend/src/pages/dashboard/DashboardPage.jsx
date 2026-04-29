@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line, CartesianGrid } from "recharts";
-import { dashboardAPI } from "../services/api";
-import { Badge, Skeleton } from "../components/ui";
-import { fmtDate, timeAgo, statusLabel, priorityLabel } from "../utils/helpers";
+import { dashboardAPI } from "../../api/api";
+import { Badge, Skeleton } from "../../components/ui";
+import { fmtDate, timeAgo, statusLabel, priorityLabel } from "../../utils/helpers";
 import toast from "react-hot-toast";
 
 const COLORS = ["#00d4ff", "#7c3aed", "#f59e0b", "#10b981", "#ef4444", "#8b5cf6"];

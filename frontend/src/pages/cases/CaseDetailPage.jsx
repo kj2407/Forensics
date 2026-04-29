@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-import { casesAPI, evidenceAPI, reportsAPI, usersAPI } from "../services/api";
-import { Badge, Modal, Spinner, Field, ConfirmDialog } from "../components/ui";
-import { fmtDate, fmtDatetime, timeAgo, evidenceTypeLabel, reportTypeLabel } from "../utils/helpers";
+import { casesAPI, evidenceAPI, reportsAPI, usersAPI } from "../../api/api";
+import { Badge, Modal, Spinner, Field, ConfirmDialog } from "../../components/ui";
+import { fmtDate, fmtDatetime, timeAgo, evidenceTypeLabel, reportTypeLabel } from "../../utils/helpers";
 
 const STATUSES   = ["open","under_investigation","pending","closed"];
 const PRIORITIES = ["low","medium","high","critical"];

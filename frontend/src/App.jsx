@@ -3,14 +3,14 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import Layout       from "./components/layout/Layout";
-import LoginPage    from "./pages/LoginPage";
-import RegisterPage from "./pages/RegisterPage";
-import DashboardPage   from "./pages/DashboardPage";
-import CasesPage       from "./pages/CasesPage";
-import CaseDetailPage  from "./pages/CaseDetailPage";
-import EvidencePage    from "./pages/EvidencePage";
-import ReportsPage     from "./pages/ReportsPage";
-import UsersPage       from "./pages/UsersPage";
+import LoginPage       from "./pages/auth/LoginPage";
+import RegisterPage    from "./pages/auth/RegisterPage";
+import DashboardPage   from "./pages/dashboard/DashboardPage";
+import CasesPage       from "./pages/cases/CasesPage";
+import CaseDetailPage  from "./pages/cases/CaseDetailPage";
+import EvidencePage    from "./pages/evidence/EvidencePage";
+import ReportsPage     from "./pages/reports/ReportsPage";
+import UsersPage       from "./pages/users/UsersPage";
 import { Spinner } from "./components/ui";
 
 const PrivateRoute = ({ children }) => {

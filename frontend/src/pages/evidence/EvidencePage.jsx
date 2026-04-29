@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-import { evidenceAPI, casesAPI } from "../services/api";
-import { Badge, EmptyState, PageHeader, Spinner } from "../components/ui";
-import { fmtDatetime, evidenceTypeLabel } from "../utils/helpers";
+import { evidenceAPI, casesAPI } from "../../api/api";
+import { Badge, EmptyState, PageHeader, Spinner } from "../../components/ui";
+import { fmtDatetime, evidenceTypeLabel } from "../../utils/helpers";
 
 const EV_TYPES  = ["physical","digital","documentary","biological","testimonial"];
 const EV_STATUS = ["collected","processing","analyzed","archived"];

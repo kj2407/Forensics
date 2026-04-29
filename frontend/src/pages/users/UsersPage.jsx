@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-import { usersAPI } from "../services/api";
-import { EmptyState, PageHeader, Spinner, ConfirmDialog } from "../components/ui";
-import { fmtDate, roleLabel } from "../utils/helpers";
-import { useAuth } from "../context/AuthContext";
+import { usersAPI } from "../../api/api";
+import { EmptyState, PageHeader, Spinner, ConfirmDialog } from "../../components/ui";
+import { fmtDate, roleLabel } from "../../utils/helpers";
+import { useAuth } from "../../context/AuthContext";
 
 const roleColor = {
   admin:        "bg-red-500/10 text-red-400 border-red-500/20",

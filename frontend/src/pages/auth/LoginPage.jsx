@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-import { useAuth } from "../context/AuthContext";
-import { Spinner } from "../components/ui";
+import { useAuth } from "../../context/AuthContext";
+import { Spinner } from "../../components/ui";
 
 export default function LoginPage() {
   const { login } = useAuth();
@@ -29,7 +29,7 @@ export default function LoginPage() {
       toast.success("Welcome back!");
       navigate("/dashboard");
     } catch (err) {
-      toast.error(err.response?.data?.error || "Login failed");
+      toast.error(err.response?.data?.message || "Login failed");
     } finally {
       setLoading(false);
     }

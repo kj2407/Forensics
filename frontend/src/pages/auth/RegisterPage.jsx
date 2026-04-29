@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-import { useAuth } from "../context/AuthContext";
-import { Spinner } from "../components/ui";
+import { useAuth } from "../../context/AuthContext";
+import { Spinner } from "../../components/ui";
 
 const ROLES = [
   { value: "investigator", label: "Investigator" },
@@ -36,9 +36,9 @@ export default function RegisterPage() {
     try {
       await register(form);
       toast.success("Account created!");
-      navigate("/dashboard");
+      navigate("/login");
     } catch (err) {
-      toast.error(err.response?.data?.error || "Registration failed");
+      toast.error(err.response?.data?.message || "Registration failed");
     } finally {
       setLoading(false);
     }
